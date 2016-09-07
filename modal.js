@@ -19,6 +19,14 @@
             this.options = extendDefaults(defaults, arguments[0])
         }
 
+        // Public methods
+
+        Modal.prototype.open = function() {
+
+        };
+
+        // Private methods
+
         function extendDefaults(source, properties) {
             var property;
             for(property in properties) {
@@ -31,5 +39,7 @@
     };
 
 })();
+
+var myModal = new Modal({content: 'Howdy', maxWidth: 600});
 
 
